@@ -17,10 +17,10 @@ with open("tabs_columns.txt") as file2:
         ListOfShifts = sentence.split()
 
         if ListOfShifts[0] == 'K':     #filter for amino acid K
-            new_calpha = ListOfShifts[0] + "\t" + ListOfShifts[1] + "\t" + ListOfShifts[2] + "\n"
+            new_calpha = ListOfShifts[0] + "," + ListOfShifts[1] + "," + ListOfShifts[2] + "\n"
             file.write(new_calpha)
 
-            new_carbonyl = ListOfShifts[0] + "\t" + ListOfShifts[1] + "\t" + ListOfShifts[3] + "\n"
+            new_carbonyl = ListOfShifts[0] + "," + ListOfShifts[1] + "," + ListOfShifts[3] + "\n"
             ffile.write(new_carbonyl)
 
         counter = counter + 1
